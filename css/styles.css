@@ -13,11 +13,6 @@
     /* Special colors */
     --transparent-white: rgba(255, 255, 255, 0.5);
  
-
-    /* Social colors */
-    --facebook-color: #3b5998;
-   
-
     /* Transistion */
     --transition-duration: .5s;
     --transition-function: ease;
@@ -58,6 +53,7 @@ p {
     padding: 0;
     font-family: 'Dosis', sans-serif;
     font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 ul {
@@ -112,23 +108,29 @@ button:focus {
     color: aliceblue;
     font-weight: 900;
 }
-.nav-burger {
+#open-menu {
     display: none;
+    cursor: pointer;
+}
+#close-menu {
+    display: none;
+    cursor: pointer;
 }
 
 .nav-link:hover {
     color: rgb(170, 166, 166);
+}
+.nav {
+    
 }
 @media screen and (max-width:767px) {
     .nav-link {
         display: none;
     }
 
-    .nav-burger {
+    #open-menu {
         display: flex;
         font-size: 2.5rem;
-       
-        
     }
 }
 
@@ -149,9 +151,8 @@ button:focus {
     
 }
 .presentation-spec {
-    display: flex;
-    margin: auto auto;
-    display: block;
+    display: inline-grid;
+    margin: auto;
     font-size: 2rem;
 
     
@@ -210,14 +211,13 @@ button:focus {
 
 }
 .competences-ttl {
-    text-align: center;
     font-size: 2rem;
+    text-align: center;
 }
 .competences-txt {
     text-align: center;
-    display: flex;
     gap: 2rem;
-    justify-content: center;
+    
     margin-top: 1rem;
 }
 @media screen and (max-width:768 ) {
@@ -253,9 +253,8 @@ button:focus {
 /* FOOTER */
 
 .footer {
-    top: 0;
-    height: 8rem;
     background-color: var(--first-color);
+    padding-bottom: 2rem;
 }
 .footer-ttl {
     text-align: center;
